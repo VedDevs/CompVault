@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CompVault</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🔐 CompVault</h1>
+
+    <button class="theme-btn" onclick="toggleTheme()">
+        Toggle Theme
+    </button>
+
+    <div id="login">
+        <input
+            type="password"
+            id="masterpassword"
+            placeholder="Master Password">
+
+        <button onclick="unlockVault()">
+            Unlock Vault
+        </button>
+    </div>
+
+    <div id="vault">
+
+        <div class="toolbar">
+            <input
+                id="search"
+                placeholder="Search..."
+                oninput="renderPasswords()">
+
+            <button onclick="exportVault()">
+                Export
+            </button>
+
+            <label class="import-btn">
+                Import
+                <input
+                    type="file"
+                    onchange="importVault(event)"
+                    hidden>
+            </label>
+        </div>
+
+        <div class="add-box">
+
+            <input
+                id="website"
+                placeholder="Website">
+
+            <input
+                id="username"
+                placeholder="Username">
+
+            <input
+                id="password"
+                placeholder="Password">
+
+            <button onclick="generatePassword()">
+                Generate Password
+            </button>
+
+            <button onclick="addPassword()">
+                Save Password
+            </button>
+
+        </div>
+
+        <div id="passwordList"></div>
+
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
