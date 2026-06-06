@@ -113,13 +113,13 @@ Planned features for future versions:
 * 🔑 Password history
 * 🛡️ Security audit tools
 
+
 ---
-
-## 🤝 Contributing
-
-Suggestions, feedback, and feature ideas are always welcome.
-
-If you find a bug or have an idea for improving CompVault, feel free to open an issue or submit a pull request.
+## Testing
+You can test the website on 
+```bash
+https://compvault.netlify.app
+```
 
 ---
 
@@ -128,10 +128,6 @@ If you find a bug or have an idea for improving CompVault, feel free to open an 
 This project is licensed under the MIT License.
 
 ---
-⭐ If you like this project, consider giving it a star!
-
----
-
 ## 👨‍💻 Author
 Made with ❤️ by Ved.
 
